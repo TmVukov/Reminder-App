@@ -1,5 +1,7 @@
 ## Project Basic Info
 
+Link to the project is in the "About" section.
+
 Project is built with React and Firebase. Also, some third-party packages are used:
 
 ‣ Framer Motion
@@ -13,8 +15,8 @@ Project is built with React and Firebase. Also, some third-party packages are us
 ‣ react-color
 
 
-Link to the project is in the "About" section.
 
+## How To Use
 
 • When clicked don't be afraid, there is a small bouncing icon in bottom right corner. Click on it. :)
 

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.react-calendar, .react-calendar__navigation__label{
+    font-family: 'Quicksand', sans-serif !important;    
+          
+}
+
+.react-calendar{           
+    border: none !important;
+}
+
+.react-calendar__navigation__label{
+    text-align: center;
+}
+
+
+.react-time-picker__wrapper{
+    border: none !important;
+}
+
+.alarm__container{
+    display: flex;
+    width: 60%;
+    height: 40vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.alarm__message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .alarm__icon-close{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.alarm__icon-check{    
+    all: unset;
+    cursor: pointer;
+    font-size: 21px;    
+}
+
+.alarm__icon-check:disabled{
+    color: lightgray;
+    cursor: not-allowed;
+}
+
+.alarm__icon-check{
+    color:green;
+    margin-right: 10px;
+}
+
+.alarm__icon-close{
+    color: red;
+}

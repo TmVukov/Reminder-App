@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.App {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;        
+}
+
+.App__container{   
+  display: flex;  
+  width: 90%;
+  height: 80vh;  
+  background-color: white;
+  padding: 20px;  
+}
+
+.App__left{  
+  width: 50%;  
+}
+
+.App__right{  
+  width: 50%;
+  overflow-y: auto;
+  overflow-x: hidden;       
+}
+
+.App__btn-open{
+  position: absolute;
+  right: 1%;
+  bottom: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.App__btn-close{
+  position: absolute;
+  right: 1%;
+  bottom: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+}

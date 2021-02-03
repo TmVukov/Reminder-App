@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{  
+  min-height: 100vh;   
+}
+
 .App {
   display: flex;  
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh; 
   overflow: hidden;
   position: relative;        
 }
@@ -13,13 +23,14 @@
 .App__container{   
   display: flex;  
   width: 90%;
-  height: 80vh;  
+  height: 80vh;
   background-color: white;
   padding: 20px;  
 }
 
 .App__left{  
-  width: 50%;  
+  width: 50%;
+  height: auto;  
 }
 
 .App__right{  

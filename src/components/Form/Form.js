@@ -85,7 +85,7 @@ export default function Form() {
 
             <button className="form__btn-color" onClick={()=>setOpen(!open)}>Select color</button>
 
-            { open && <CirclePicker width="220px" circleSize={20} onChangeComplete={getColor}/>}
+            { open && <CirclePicker width="300px" circleSize={19} onChangeComplete={getColor}/>}
 
             <Alarm/>            
                 

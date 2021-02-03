@@ -194,7 +194,14 @@ export default function ReactCalendar() {
             
             <Calendar 
                 locale="en" 
-                tileClassName={["react-calendar", "react-calendar__navigation__label"]}               
+                tileClassName={
+                    [
+                        "react-calendar", 
+                        "react-calendar__navigation",                        
+                        "react-calendar__navigation__label",
+                        "react-calendar__navigation__arrow"                        
+                    ]
+                }               
                 onChange={selectDate}                          
             />
             
@@ -217,7 +224,7 @@ export default function ReactCalendar() {
                    reminders.some(e=>e.alarmDisplay[0] === alarmDisplay[0]) ? <p>Alarm is already set!</p> : 
                    alarmDisplay.length && convertDateToMs(alarmDisplay) < new Date().getTime() ? <p>Alarm is not valid! Please discard it.</p> :
                    alarmDisplay.length ? <p>Alarm is saved!</p> :                                                        
-                   alarmDisplay && alarmTime ? <p>Save alarm at {alarmDate}/{alarmTime.slice(0,5)} ?</p> : ""            
+                   alarmDisplay && alarmTime ? <p>Save alarm at {alarmDate}/{alarmTime.slice(0,5)}?</p> : ""            
                 } 
                                 
                 {
@@ -229,7 +236,7 @@ export default function ReactCalendar() {
 
                         <AiOutlineClose onClick={discardAlarm} className="alarm__icon-close"/>
                     </div>
-                }                
+                }                  
                                 
             </div>            
                 

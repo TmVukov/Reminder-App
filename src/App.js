@@ -9,27 +9,24 @@ import { motion } from "framer-motion"
 
 
 function App() {
-  const [open, setOpen] = useState(false)    
-  
-  const variants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: "100%" }    
-  } 
+  const [open, setOpen] = useState(false)   
   
   const bounce = {
     duration: 0.3,
     yoyo: Infinity,
     ease: "easeOut"
-  }  
-    
-
+  }
+  
+  
   return (
     <div className="App">
       
       {
         open ? 
 
-        <BiWindowClose className="App__btn-close" onClick={()=>setOpen(false)}/> :
+        <BiWindowClose className="App__btn-close" onClick={()=>setOpen(false)}/>
+        
+        :
 
         <motion.div
           className="App__btn-open"
@@ -40,11 +37,15 @@ function App() {
         </motion.div>
       }     
       
-        <motion.div
-          animate={open ? "open" : "closed"}
-          variants={variants} 
+      {
+        open && 
+
+          <motion.div
+          initial={{opacity: 0, y: "100%"}}
+          animate={{opacity: 1, y: 0}}
+          transition={{type: "spring", stiffness: 180}}          
           className="App__container"
-        >
+          >
             <div className="App__left">
               <Form/>
             </div>
@@ -52,7 +53,8 @@ function App() {
             <div className="App__right">
               <Reminder/>
             </div>
-        </motion.div>       
+          </motion.div>
+      }       
                           
         <Notification/>
 

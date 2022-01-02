@@ -1,33 +1,32 @@
-.notification__container{
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    top: 0;    
-    right: 0;   
-    width: 30%;
-    height: 80px;
-    padding: 2px;           
+.notification__container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 80px;
+  padding: 2px;
 }
 
-.notification{      
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 250px;
-    height: 100%;    
-    border-radius: 5px;       
-    background-color: paleturquoise;
-    margin: 0 5px;
-    padding: 0 15px;       
+.notification {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: paleturquoise;
+  margin: 0 5px;
+  padding: 0 15px;
 }
 
-
-.notification__btn{
-    all: unset;    
-    color: black;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.notification__btn {
+  all: unset;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

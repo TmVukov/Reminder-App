@@ -1,75 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-.react-calendar, .react-calendar__navigation__label{
-    font-family: 'Quicksand', sans-serif !important;          
+.react-calendar,
+.react-calendar__navigation__label {
+  font-family: 'Quicksand', sans-serif !important;
 }
 
-.react-calendar{           
-    border: none !important;    
-    margin-top: 20px !important;       
+.react-calendar {
+  border: none !important;
+  margin-top: 20px !important;
 }
 
-.react-calendar__navigation{
-    margin: 0 !important;
+.react-calendar__navigation {
+  margin: 0 !important;
 }
 
-.react-calendar__navigation__label, 
-.react-calendar__navigation__arrow{
-    text-align: center;
-    height: 30px !important;
+.react-calendar__navigation__label,
+.react-calendar__navigation__arrow {
+  text-align: center;
+  height: 30px !important;
 }
 
-.react-time-picker__wrapper{
-    border: none !important; 
-    margin: 20px !important;   
-    text-align: center;    
+.react-time-picker__wrapper {
+  border: none !important;
+  margin: 20px !important;
+  text-align: center;
 }
 
-.alarm__container{
-    width: 60%;
-    min-height: 45vh;
-    margin-bottom: 10px;
-    display: flex;    
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.alarm__container {
+  width: 60%;
+  min-height: 45vh;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.alarm__message{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 55px;
-    justify-content: space-between;
-    align-items: center;    
+.alarm__message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 55px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.alarm__message p{
-    margin: 0;    
-    font-size: 14px;
+.alarm__message p {
+  margin: 0;
+  font-size: 14px;
 }
 
- .alarm__icon-close{
-    font-size: 20px;
-    cursor: pointer;
+.alarm__icon-close {
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.alarm__icon-check{    
-    all: unset;
-    cursor: pointer;
-    font-size: 21px;    
+.alarm__icon-check {
+  all: unset;
+  cursor: pointer;
+  font-size: 21px;
 }
 
-.alarm__icon-check:disabled{
-    color: lightgray;
-    cursor: not-allowed;
+.alarm__icon-check:disabled {
+  color: lightgray;
+  cursor: not-allowed;
 }
 
-.alarm__icon-check{
-    color:green;
-    margin-right: 10px;
+.alarm__icon-check {
+  color: green;
+  margin-right: 10px;
 }
 
-.alarm__icon-close{
-    color: red;
+.alarm__icon-close {
+  color: red;
 }
